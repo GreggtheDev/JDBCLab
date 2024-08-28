@@ -10,7 +10,7 @@ public class DatabaseConnector {
         Connection connection = null;
         try {
             // Replace "yourDatabase.db" with the actual path to your SQLite database
-            String url = "jdbc:sqlite:yourDatabase.db";
+            String url = "jdbc:sqlite:JDBC.db";
             connection = DriverManager.getConnection(url);
             System.out.println("Successfully connected to the database!");
         } catch (SQLException e) {
