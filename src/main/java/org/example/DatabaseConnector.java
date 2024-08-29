@@ -11,8 +11,8 @@ public class DatabaseConnector {
     public Connection connect() {
         Connection connection = null;
         try {
-            // Path to your SQLite database file
-            String url = "jdbc:sqlite:JDBC.db"; // Ensure this path is correct
+            // Path to SQLite database file
+            String url = "JDBCLab/JDBC.sqlite3"; // Ensure this path is correct
             connection = DriverManager.getConnection(url);
             System.out.println("Successfully connected to the database!");
         } catch (SQLException e) {
